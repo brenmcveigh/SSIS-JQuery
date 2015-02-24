@@ -7,10 +7,10 @@ Business users without access to SSMS can use the Web page to execute the SSIS p
 The application looks in the Web.Config file for the designated directory where the SSIS packages reside.
 
 Below you can see an example directory.
-
--<appSettings>
+```
+<appSettings>
 	<add value="C:\SSIS Files" key="SSISDirectory"/>
-
+```
 
 The Web application is built around the SSIS packages it detects in the directory. Rendering the web page elements per each package. 
 
